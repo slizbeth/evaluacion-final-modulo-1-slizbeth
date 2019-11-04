@@ -1,0 +1,73 @@
+.main__article--first, .main__article--second{
+    border: 1px solid #fabada;
+}
+
+.main__article--first{
+    padding-top: 30px;
+}
+
+.article_span{
+    color: $color-light-blue;
+}
+
+.main__title{
+    margin-top: 1px;
+    margin-bottom: 15px;
+}
+
+.main__paragraph{
+    margin-bottom: 30px;
+}
+
+.bnt-border{
+    text-transform:  $capitalize;
+    text-align: center;
+    line-height: 45px;
+    width: 76px;
+    height: 45px;
+    border: 2px solid $color-bright-orange;
+    border-radius: 22.5px;
+    margin-bottom: 30px;
+    
+     a{
+        color: $color-bright-orange;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 45px;
+     }
+     &:hover{
+        color: $color-white;
+        background-color: $color-bright-orange;
+     }
+}
+
+.main__article--second{
+    background-color: $color-ice-blue;
+    text-align: center;
+    padding-bottom: 60px;
+}
+// .main__article--list{
+//     display: grid;
+// } esto va en media query
+
+.bnt-filling{
+    line-height: 48px;
+    background-color: $color-bright-orange;
+    width: 148px;
+    height: 48px;
+    border-radius: 22.5px;
+    margin: auto;
+    
+    a{
+        color: $color-white;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 45px;
+        span{
+            text-transform: $capitalize;
+        }
+       
+    }
+}
