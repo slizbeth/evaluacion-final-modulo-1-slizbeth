@@ -1,9 +1,39 @@
 .footer__btn--up{
-    height: 100px;
-	width: 100px;
+    border-radius: 50px;
+	height: 45px;
+	margin: auto;
+	width: 45px;
+	transform: translateY(-21px);
 	background: url('../images/ico-arrow.svg') center center no-repeat $color-white;
 }
 
 .heart-color{
 	color: $color-bright-orange;
+}
+
+.page__footer{
+	border: 1px solid #fabada;
+	text-align: center;
+	font-family: 'Roboto', sans-serif;
+	color: $color-white;
+	font-size: 16px;
+	line-height: 30px;
+	background-color: $color-dark-grey-blue;
+	 a{
+		color: $color-white;
+		text-transform: $uppercase;
+	 }
+}
+
+.footer__menu{
+	margin-top: 15px;
+	padding-bottom: 45px;
+}
+
+.footer__menu--list--social{
+	margin-top: 30px;
+}
+
+.footer__menu--list--copyright{
+	margin-top: 30px;
 }
