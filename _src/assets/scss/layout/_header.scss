@@ -1,11 +1,63 @@
+.page__header, .header__nav, .header__paragraph,  .header__title, .header__btn--down{
+	border: 2px solid #fabada;
+}
+
 .page__header {
-	background: url('../images/cover.jpg') center center no-repeat $color-white;
-	margin: 0;
+	color: $color-white;
+	background: url('../images/cover.jpg') center no-repeat $color-white;
 	height: 100vh;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+
+//img menu//
+.header__nav{
+	background: url('../images/ico-menu.svg') center center no-repeat $color-cerulean;
+	height: 44px;
+	width: 44px;
+	position: fixed;
+	top:0px;
+	left: 0px;
+	z-index: 1;
 }
 
 .header__btn--down{ 
-	height: 100px;
-	width: 100px;
+	border-radius: 50px;
+	height: 45px;
+	width: 45px;
 	background: url('../images/ico-scroll-down.svg') center center no-repeat $color-white;
+}
+
+.header__title{
+	height: 100%;
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+	
+}
+
+.uppercase{
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+	text-transform: $uppercase;
+	font-family: 'Roboto Slab', serif;
+	font-size: 42px;
+	line-height: 55px;
+}
+
+.header__paragraph::first-letter{
+	text-transform:  $capitalize;
+	font-size: 16px;
+	font-family: 'Roboto', sans-serif;
+}
+
+a{
+	.header__btn--down{
+		margin-top: 45px;
+		margin-bottom: 53px;
+	}
 }

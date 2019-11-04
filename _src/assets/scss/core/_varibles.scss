@@ -1,7 +1,13 @@
-$color-white: #fff;
-$color-orange: #f26002;
-$color-dark-grey-blue:#304268;
-$color-blue:#0271bc;
-$color-greyish-brown:#4a4a4a;
 $color-black:#000;
+$color-white: #fff;
+$color-bright-orange: #f26002;
+$color-cerulean:#0271bc;
+$color-greyish-brown:#4a4a4a;
 $color-ice-blue:#eff9ff;
+$color-dark-grey-blue:#304268;
+
+//fonts
+$uppercase: uppercase;
+$capitalize: capitalize;
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap');
