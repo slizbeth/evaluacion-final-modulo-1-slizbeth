@@ -1,0 +1,11 @@
+.page__header {
+	background: url('../images/cover.jpg') center center no-repeat $color-white;
+	margin: 0;
+	height: 100vh;
+}
+
+.header__btn--down{ 
+	height: 100px;
+	width: 100px;
+	background: url('../images/ico-scroll-down.svg') center center no-repeat $color-white;
+}
