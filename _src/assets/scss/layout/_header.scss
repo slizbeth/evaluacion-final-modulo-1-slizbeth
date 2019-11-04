@@ -1,14 +1,9 @@
-.page__header, .header__nav, .header__paragraph,  .header__title, .header__btn--down{
-	border: 2px solid #fabada;
-}
-
+//img fondo - hero//
 .page__header {
 	color: $color-white;
 	background: url('../images/cover.jpg') center no-repeat $color-white;
 	height: 100vh;
-	margin: 0;
-	padding: 0;
-	text-align: center;
+	background-size:cover;
 }
 
 //img menu//
@@ -35,7 +30,6 @@
     flex-direction: column;
     align-items: center;
     justify-content: flex-end;
-	
 }
 
 .uppercase{
