@@ -21,7 +21,7 @@
 	background-color: $color-dark-grey-blue;
 	 a{
 		color: $color-white;
-		text-transform: $uppercase;
+		@include textTransform(uppercase);
 	 }
 }
 

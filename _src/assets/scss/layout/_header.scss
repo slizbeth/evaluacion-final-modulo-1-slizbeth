@@ -1,9 +1,9 @@
 //img fondo - hero//
 .page__header {
-	color: $color-white;
 	background: url('../images/cover.jpg') center no-repeat $color-white;
-	height: 100vh;
 	background-size:cover;
+	height: 100vh;
+	color: $color-white;
 }
 
 //img menu//
@@ -17,41 +17,43 @@
 	z-index: 1;
 }
 
-.header__btn--down{ 
-	border-radius: 50px;
-	height: 45px;
-	width: 45px;
-	background: url('../images/ico-scroll-down.svg') center center no-repeat $color-white;
+//contenedor texto//
+.header__text{
+	height: 100%;
+	@include flexColumn(flex-end);
 }
 
 .header__title{
-	height: 100%;
-	display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-end;
+	@include flexColumn(center);
+	@include font($font-roboto-slab, 55px, bold);
+	@include textTransform(uppercase);
+	font-size: rem(42);
+	@include tablet{
+		font-size: rem(80);
+		line-height: 106px;
+    } 
+    @include desktop{
+        font-size: rem(100);
+		line-height: 132px;
+    } 
+
 }
 
-.uppercase{
-	display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-	text-transform: $uppercase;
-	font-family: 'Roboto Slab', serif;
-	font-size: 42px;
-	line-height: 55px;
-}
-
-.header__paragraph::first-letter{
-	text-transform:  $capitalize;
+.header__paragraph{
 	font-size: rem(16);
-	font-family: 'Roboto', sans-serif;
+	font-family: $font-roboto;
+	&::first-letter{
+		@include textTransform(capitalize);
+	}
+	@include tablet{
+		font-size: rem(24);
+    }
 }
 
-a{
-	.header__btn--down{
-		margin-top: 45px;
-		margin-bottom: 53px;
-	}
+.header__btn--down{ 
+	@include bnt();
+	background: url('../images/ico-scroll-down.svg') center center no-repeat $color-white;
+	margin-top: 45px;
+	margin-bottom: 53px;
 }
+
