@@ -13,7 +13,7 @@
 }
 
 .article__title--first{
-    padding-top: 30px;
+    margin-top: 0px;
     margin-bottom: 15px;
     @include font($font-roboto-slab, 30px, bold);
     font-size: rem(24);
@@ -52,7 +52,8 @@
         transform: rotate(180deg);
     }
     @include tablet{
-		margin-bottom: 60px;
+        margin-bottom: 60px;
+        width: 160px;
     } 
 }
 

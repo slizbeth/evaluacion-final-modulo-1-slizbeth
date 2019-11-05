@@ -28,9 +28,11 @@
 	@include font($font-roboto-slab, 55px, bold);
 	@include textTransform(uppercase);
 	font-size: rem(42);
+	margin-bottom: 10px;
 	@include tablet{
 		font-size: rem(80);
 		line-height: 106px;
+		margin-bottom: 20px;
     } 
     @include desktop{
         font-size: rem(100);
@@ -57,5 +59,13 @@
 	background: url('../images/ico-scroll-down.svg') center center no-repeat $color-white;
 	margin-top: 45px;
 	margin-bottom: 53px;
+	@include tablet{
+		margin-top: 30px;
+		margin-bottom: 45px;
+	}
+	@include desktop{
+		margin-top: 30px;
+		margin-bottom: 13px;
+    }
 }
 
