@@ -1,9 +1,12 @@
 //primer articulo - main
-.main__article--first{
+.page__main{
     padding-top: 30px;
+    @include tablet{
+		margin-bottom: 60px;
+    } 
 }
 
-.article_span, .main__title{
+.article_span, .article__title--first, .article__title--second{
     @include textTransform(capitalize);
 }
 
@@ -13,15 +16,17 @@
     color: $color-light-blue;
 }
 
-.main__title{
-    margin-top: 1px;
+.article__title--first{
     margin-bottom: 15px;
     @include font($font-roboto-slab, 30px, bold);
     font-size: rem(24);
     color: $color-black;
+    @include tablet{
+		margin-bottom: 30px;
+    } 
 }
 
-.main__paragraph{
+.article__paragraph{
     margin-bottom: 30px;
     @include font($font-roboto, 30px, normal);
     font-size: rem(18);
@@ -47,39 +52,48 @@
         color: $color-white;
         background-color: $color-bright-orange;
     }
+    @include tablet{
+		margin-bottom: 60px;
+    } 
 }
 
-
-
-
-
-
-
-
-
-
+//articulo segundo
 .main__article--second{
     background-color: $color-ice-blue;
     text-align: center;
-    padding-bottom: 60px;
+}
+
+.article__title--second{
+    margin: 0px;
     padding-top: 30px;
+    @include font($font-roboto-slab, 30px, bold);
+    font-size: rem(24);
+    color: $color-black;
 }
 
 .main__article--list{
     color: $color-black;
     font-size: rem(18);
+    li{
+        margin-top: 45px;
+    }
     li>h3{
+        margin: 0px;
         @include font ($font-roboto-slab, 30px, bold);
     }
     li>p{
+        margin: 0px;
         @include font ($font-roboto, 30px, normal);
     }
+    @include tablet{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        li>h3{
+            margin-bottom: 14px;
+            @include font ($font-roboto-slab, 30px, bold);
+        }
+    }
 }
-
-
-// .main__article--list{
-//     display: grid;
-// } esto va en media query
 
 .article__bnt-filling{
     width: 148px;
@@ -98,4 +112,8 @@
     span{
         @include textTransform(capitalize);
     }
+    @include tablet{
+        margin-top: 60px;
+		margin-bottom: 60px;
+    } 
 }
