@@ -1,3 +1,4 @@
+
 .footer__btn--up{
     border-radius: 50px;
 	height: 45px;
@@ -5,6 +6,17 @@
 	width: 45px;
 	transform: translateY(-21px);
 	background: url('../images/ico-arrow.svg') center center no-repeat $color-white;
+	&:hover{
+	animation: bonus 5s ease 2;
+	}
+
+}
+
+@keyframes bonus {
+	0%   {transform: translateY(-21px);};
+	25%   {transform: translateY(-55px);};
+	50%  {transform: translateY(10px);}
+	100% {transform: translateY(-21px);}
 }
 
 .heart-color{

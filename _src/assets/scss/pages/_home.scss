@@ -1,3 +1,7 @@
+.main__article--first{
+    padding-top: 30px;
+    
+}
 .article_span, .article__title--first, .article__title--second{
     @include textTransform(capitalize);
 }
@@ -41,9 +45,11 @@
     @include font($font-roboto, 45px, 500);
     font-size: rem(20);
     color: $color-bright-orange;
+    transition: transform 2s;
     &:hover{
         color: $color-white;
         background-color: $color-bright-orange;
+        transform: rotate(180deg);
     }
     @include tablet{
 		margin-bottom: 60px;
@@ -101,10 +107,12 @@
     @include font ($font-roboto, 45px, 500);
     color: $color-white;
     font-size: rem(20);
+    transition: width 2s, height 2s, transform 2s;
     &:hover{
         color: $color-bright-orange;
         background-color: $color-white;
         border: 2px solid $color-bright-orange;
+        transform: rotateY(130deg);
     }
     span{
         @include textTransform(capitalize);
