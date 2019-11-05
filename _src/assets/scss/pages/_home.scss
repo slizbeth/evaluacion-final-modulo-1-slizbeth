@@ -1,73 +1,101 @@
-.main__article--first, .main__article--second{
-    border: 1px solid #fabada;
-}
-
+//primer articulo - main
 .main__article--first{
     padding-top: 30px;
 }
 
+.article_span, .main__title{
+    @include textTransform(capitalize);
+}
+
 .article_span{
+    font-size: rem(14);
+    font-family: $font-roboto;
     color: $color-light-blue;
 }
 
 .main__title{
     margin-top: 1px;
     margin-bottom: 15px;
+    @include font($font-roboto-slab, 30px, bold);
+    font-size: rem(24);
+    color: $color-black;
 }
 
 .main__paragraph{
     margin-bottom: 30px;
+    @include font($font-roboto, 30px, normal);
+    font-size: rem(18);
+    color: $color-greyish-brown;
+    &::first-letter{
+        @include textTransform(capitalize);
+    }
 }
 
-.bnt-border{
-    @include textTransform(capitalize);
-    text-align: center;
-    line-height: 45px;
+.article__bnt-border{
     width: 76px;
     height: 45px;
+    margin-bottom: 30px;
     border: 2px solid $color-bright-orange;
     border-radius: 22.5px;
-    margin-bottom: 30px;
-    
-     a{
-        color: $color-bright-orange;
-        font-family: 'Roboto', sans-serif;
-        font-weight: 500;
-        font-size: rem(20);
-        line-height: 45px;
-     }
-     &:hover{
+    background-color: $color-white;
+    @include textTransform(capitalize);
+    text-align: center;
+    @include font($font-roboto, 45px, 500);
+    font-size: rem(20);
+    color: $color-bright-orange;
+    &:hover{
         color: $color-white;
         background-color: $color-bright-orange;
-     }
+    }
 }
+
+
+
+
+
+
+
+
+
 
 .main__article--second{
     background-color: $color-ice-blue;
     text-align: center;
     padding-bottom: 60px;
+    padding-top: 30px;
 }
+
+.main__article--list{
+    color: $color-black;
+    font-size: rem(18);
+    li>h3{
+        @include font ($font-roboto-slab, 30px, bold);
+    }
+    li>p{
+        @include font ($font-roboto, 30px, normal);
+    }
+}
+
+
 // .main__article--list{
 //     display: grid;
 // } esto va en media query
 
-.bnt-filling{
-    line-height: 48px;
-    background-color: $color-bright-orange;
+.article__bnt-filling{
     width: 148px;
     height: 48px;
     border-radius: 22.5px;
     margin: auto;
-    
-    a{
-        color: $color-white;
-        font-family: 'Roboto', sans-serif;
-        font-weight: 500;
-        font-size: 20px;
-        line-height: 45px;
-        span{
-            @include textTransform(capitalize);
-        }
-       
+    background-color: $color-bright-orange;
+    @include font ($font-roboto, 45px, 500);
+    color: $color-white;
+    font-size: rem(20);
+    &:hover{
+        color: $color-bright-orange;
+        background-color: $color-white;
+        border: 2px solid $color-bright-orange;
+    }
+    span{
+        @include textTransform(capitalize);
     }
 }
