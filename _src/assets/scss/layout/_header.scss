@@ -42,6 +42,7 @@
 .header__paragraph{
 	font-size: rem(16);
 	font-family: $font-roboto;
+	text-align: center;
 	&::first-letter{
 		@include textTransform(capitalize);
 	}
@@ -52,6 +53,7 @@
 
 .header__btn--down{ 
 	@include bnt();
+	margin: auto;
 	background: url('../images/ico-scroll-down.svg') center center no-repeat $color-white;
 	margin-top: 45px;
 	margin-bottom: 53px;

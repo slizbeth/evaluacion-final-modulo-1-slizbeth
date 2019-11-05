@@ -1,11 +1,3 @@
-//primer articulo - main
-.page__main{
-    padding-top: 30px;
-    @include tablet{
-		margin-bottom: 60px;
-    } 
-}
-
 .article_span, .article__title--first, .article__title--second{
     @include textTransform(capitalize);
 }
@@ -17,6 +9,7 @@
 }
 
 .article__title--first{
+    padding-top: 30px;
     margin-bottom: 15px;
     @include font($font-roboto-slab, 30px, bold);
     font-size: rem(24);
@@ -61,6 +54,7 @@
 .main__article--second{
     background-color: $color-ice-blue;
     text-align: center;
+    padding-bottom: 60px;
 }
 
 .article__title--second{
@@ -76,6 +70,9 @@
     font-size: rem(18);
     li{
         margin-top: 45px;
+        &:last-child{
+            margin-bottom: 38px;
+        }
     }
     li>h3{
         margin: 0px;
@@ -112,8 +109,5 @@
     span{
         @include textTransform(capitalize);
     }
-    @include tablet{
-        margin-top: 60px;
-		margin-bottom: 60px;
-    } 
+    
 }
