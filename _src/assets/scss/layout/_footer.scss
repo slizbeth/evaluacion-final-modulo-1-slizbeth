@@ -24,25 +24,27 @@
 }
 
 .page__footer{
-	border: 1px solid #fabada;
 	text-align: center;
 	font-family: 'Roboto', sans-serif;
-	color: $color-white;
+	color: $color-black;
 	font-size: rem(16);
 	line-height: 30px;
-	background-color: $color-dark-grey-blue;
+	background-color: $color-cerulean;
 	 a{
-		color: $color-white;
+		color: $color-black;
 		@include textTransform(uppercase);
 	 }
 }
 
 .footer__menu{
-	margin-top: 15px;
-	padding-bottom: 45px;
+	//margin-top: 15px;
+	ul{
+		padding-top: 45px;
+		padding-bottom: 45px;
+	}
 	@include tablet{
 		display: flex;
-		flex-direction: row;
+		flex-direction: row-reverse;
 		align-items: baseline;
 		justify-content: space-between;
 		
@@ -53,7 +55,7 @@
 }
 
 .footer__menu--list--social{
-	margin-top: 30px;
+	//margin-top: 30px;
 	@include tablet{
 		margin-top: 15px;
 		order:3;
@@ -61,10 +63,13 @@
 }
 
 .footer__menu--list--copyright{
-	margin-top: 30px;
+	//margin-top: 30px;
 	@include tablet{
 		margin-top: 15px;
 		order:1;
+		.orange{
+			color:$color-bright-orange;
+		}
     } 
 }
 .footer__menu--list--secctions{
